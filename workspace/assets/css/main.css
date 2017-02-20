@@ -1,0 +1,126 @@
+.hive {
+    color:#facc00;
+}
+.atom {
+color:#2ced30;
+}
+.hive-btn {
+    float:right;
+    background-color:#facc00;
+    color:#333;
+}
+.atom-btn {
+    float:right;
+    background-color:#2ced30;
+    color:#333;
+}
+.atom-btn:hover {
+    color:#2ced30!important;
+    background-color:#333;
+}
+.hive-btn:hover {
+    color:#facc00!important;
+    background-color:#333;
+}
+
+a {
+    text-decoration: none;
+}
+
+.m-btn {
+    float:right;
+}
+
+.contact-btn {
+    font-family: Work Sans;
+	font-size: 16px;
+	font-weight: 600;
+	color: #FFFFFF!important;
+	background: #489FDF!important;
+	display: inline-block;
+	text-transform: uppercase;
+	background: transparent;
+	border: 2px solid;
+	border-color: #489FDF;
+	padding: 10px 20px;
+	border-radius: 25px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	-webkit-transform: 0.5s;
+	-moz-transform: 0.5s;
+	transition: 0.5s;
+}
+
+.contact-btn:hover, .contact-btn:focus {
+	color: #489fdf!important;
+	background: #fff!important;
+	border-color: #489FDF;
+	text-decoration: none;
+}
+
+
+.typewrite {
+  text-align: center;
+  position: relative;
+  color:#fff;
+  top: 75%!important;
+ left: 20%;
+ margin-left: -50%;
+ transform: translate(-50%, -50%)
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+  	.typewrite {
+  		display:none;
+  	}
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+  	.typewrite {
+  		display:none;
+  	}
+}
+
+/* Portrait */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: portrait) {
+  	.typewrite {
+  		display:initial;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+.inst {
+	color:#005fa8;
+}
+
+.inst:hover
+{
+  color:  #000; 
+
+}
+
+.git:hover {
+	color:#333
+}
+
+.fb:hover {
+color:	#003660
+}

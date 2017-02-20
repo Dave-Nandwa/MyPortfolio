@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Person Minimal Portfolio Template">
+    <meta name="keywords" content="Person HTML Template, Person Portfolio Template">
+    <link href='https://fonts.googleapis.com/css?family=Poppins:400,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:600,500,400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/animate.css"> <!-- Resource style -->
+    <link rel="stylesheet" type="text/css" media="all" href="assets/css/ionicons.min.css"> <!-- Resource style -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!--Font awesome lib-->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <link rel="icon" href="logo.png">
+  </head>
+  <body>
+    <div id="loading">
+    </div>
+    <div class="wrapper">
+    <div class="nav-trigger visible-xs visible-sm" role="button" title="sweet hamburger">
+      <div class="hamburger">
+        <div class="icon"></div>
+      </div>
+    </div>
+
+    <div id="nav-menu">
+          <ul class="navigation">
+            <li><a class='active' href="index.html">Home <i class=" fa fa-home" aria-hidden="true"></i></a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.php">Contact</a></li>
+          </ul> <!-- cd-single-item-wrapper -->
+
+          <div class="nav-social">
+            <ul>
+              <li><a href="#"><i class="inst fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+          
+      </div>
+
+
+      <!-- Homepage Main Section-->
+      <div class="main">
+        <section class="split-home">
+          
+          <section class="left-section personal wow fadeIn" data-wow-delay="0.2s">
+          <center><h1>
+            <a href="" class="typewrite" data-period="1000" data-type='[ "Hi,", "Please", "Scroll Down."]'>
+              <span class="wrap"></span>
+            </a>
+          </h1></center>
+          
+          </section>
+          <section class="right-section">
+            <div class="top-nav hidden-xs hidden-sm wow fadeIn" data-wow-delay="0.3s">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="main-logo">
+            <a class="wow fadeIn circle" data-wow-delay="0.3s" href="#"><img src="logo.png" width="55" height="55" alt="Logo" /></a>
+            </div>
+            <div class="intro">
+              <div class="intro-text">
+                <h4 class="wow fadeInDown" data-wow-delay="0.4s">Web Developer based in Kenya</h4>
+                <h1 class="wow fadeInDown" data-wow-delay=".5s"> David Nandwa </h1>
+                <p class="wow fadeInDown" data-wow-delay="0.6s">I build websites like this one
+                during my free time and <br class="visible-lg">  put it on the Internet for all the world to behold! Lol.</p>
+                <a href="about.html" class="contact-btn wow fadeInDown" data-wow-delay=".6s">Learn More</a>
+              </div>
+            </div>
+            <div class="footer-personal text-center wow fadeInDown" data-wow-delay="0.7s">
+           <span class="footer-credits"> David Nandwa 2017 &trade;</span>
+           <div class="nav-social row">
+            <ul>
+              <li><a href="https://www.instagram.com/nand.wa/?hl=en"><i class="inst fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="https://web.facebook.com/nand.waa"><i class="fb fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="https://github.com/valeix"><i class="git fa fa-github" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+          </div>
+         </section>
+       </section>
+      </div><!-- Main-->
+    </div><!-- Wrapper -->
+
+    <!-- Jquery and Js Plugins -->
+    <script type="text/javascript" src="assets/js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins.js"></script>
+    <script type="text/javascript" src="assets/js/menu.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+    
+    
+    <script>
+      var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+    </script>
+  </body>
+</html>
